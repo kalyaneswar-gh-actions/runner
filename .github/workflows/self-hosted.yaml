@@ -1,0 +1,11 @@
+name: self-hosted-runner
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  setup-runner:
+    runs-on: self-hosted
+    steps:
+      - name: workflow run info
+        run: echo "This workflow is running on self-hosted runner"
